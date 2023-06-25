@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ccewo's first web</title>
+</head>
+<body>
+    <h2>User:{{name}}</h2>
+    {# lenth 使用获取对象长度 #}
+    <p>有{{ lst_1|length }}个对象</p>
+    <ul>
+        {% for i in lst_1 %}
+        <li>{{ i.name }},{{ i.age }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
